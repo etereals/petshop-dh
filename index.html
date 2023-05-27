@@ -2,40 +2,50 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
     <title>PetShop</title>
   </head>
 
   <body>
     <header>
-      <p id="landing phrase">Grandes ofertas en comederos</p>
-      <form action="placeholder">
-        <select name="language" id="languageSelector">
-          <option value="español">Español</option>
-          <option value="inglés">Inglés</option>
-        </select>
-      </form>
-      <form action="placeholder">
-        <select name="currency" id="currencySelector">
-          <option value="$ARG">$ARG</option>
-          <option value="$UYU">$UYU</option>
-          <option value="$USD">$USD</option>
-        </select>
-      </form>
-
-      <img src="placeholderCat" alt="cat logo" />
-      <h1 style="text-align: left" id="logo FrontCat&Dog">
-        <a href="index.html" title="Home page"
-          ><img src="logo.png" alt="Cat & Dogs logos."
-        /></a>
-      </h1>
-      <img src="placeholderDog" alt="dog logo" />
-
-      <nav style="text-align: right">
-        <a href="/placeholder1">Categorías</a> |
-        <a href="/placeholder2">Pets</a> |
-        <a href="/placeholder3">Nosotros</a> |
-        <a href="/placeholder4">Contactanos</a>
-      </nav>
+      <section class="header-container-top">
+        <p id="landingPhrase">Grandes ofertas en comederos</p>
+        <div class="topItems">
+          <form action="placeholder">
+            <div class="custom-select">
+            <select name="language" id="languageSelector">
+              <option value="español">Español</option>
+              <option value="inglés">Inglés</option>
+            </select>
+          </div>
+          </form>
+          <form action="placeholder">
+            <div class="custom-select">
+              <select name="currency" id="currencySelector">
+                <option value="$ARG">$ARG</option>
+                <option value="$UYU">$UYU</option>
+                <option value="$USD">$USD</option>
+              </select>
+            </div>
+          </form>          
+        </div>
+      </section>
+      
+      <div class="bgY">
+        <div class="logo">
+          <img src="./img/Cat.png" alt="Gato logo" class="img" />
+          <h1>Front<span>Cat&Dog</span></h1>
+          <img src="./img/Dog.png" alt="Perro logo" class="img" />
+        </div>
+        <section class="header-container-below">
+        <nav class="header-nav">
+          <a href="/placeholder1">Categorías</a> |
+          <a href="/placeholder2">Pets</a> |
+          <a href="/placeholder3">Nosotros</a> |
+          <a href="/placeholder4">Contactanos</a>
+        </nav>
+      </div>
+    </section>          
     </header>
     <main>
       <section id="banner">
@@ -65,41 +75,60 @@
           <p>$150</p>
         </div>
         <div class="productBox">
-            <img src="img/comedero.png" alt="comedero metalico" />
-            <p>Comedero para perro</p>
-            <p>$150</p>
-          </div>
-          <div class="productBox">
-            <img src="img/Huesito.png" alt="huesitos de Juguete" />
-            <p>Juguete Huesito</p>
-            <p>$150</p>
-          </div>
+          <img src="img/comedero.png" alt="comedero metalico" />
+          <p>Comedero para perro</p>
+          <p>$150</p>
+        </div>
+        <div class="productBox">
+          <img src="img/Huesito.png" alt="huesitos de Juguete" />
+          <p>Juguete Huesito</p>
+          <p>$150</p>
+        </div>
       </section>
       <section style="text-align: center" id="contact">
         <div class="contactForm">
-            <label for="Name" class="formName">Nombre y Apellido</label>
-            <div class="inputField">
-                <input type="text" id="Name" name="Name" class="formInput" required>
-            </div>
+          <label for="Name" class="formName">Nombre y Apellido</label>
+          <div class="inputField">
+            <input
+              type="text"
+              id="Name"
+              name="Name"
+              class="formInput"
+              required
+            />
+          </div>
         </div>
 
         <div class="contactForm">
-            <label for="Mail" class="formEmail">Ingresá tu correo electrónico</label>
-            <div class="inputField">
-                <input type="text" id="Mail" name="Mail" class="formInput" required>
-            </div>
+          <label for="Mail" class="formEmail"
+            >Ingresá tu correo electrónico</label
+          >
+          <div class="inputField">
+            <input
+              type="text"
+              id="Mail"
+              name="Mail"
+              class="formInput"
+              required
+            />
+          </div>
         </div>
 
         <div class="contactForm">
-            <label for="Phone" class="formPhone">Teléfono</label>
-            <div class="inputField">
-                <input type="text" id="Phone" name="Phone" class="formInput" required>
-            </div>
+          <label for="Phone" class="formPhone">Teléfono</label>
+          <div class="inputField">
+            <input
+              type="text"
+              id="Phone"
+              name="Phone"
+              class="formInput"
+              required
+            />
+          </div>
         </div>
 
-
         <div class="contactForm">
-            <button type="submit" id="submitButton">Enviar</button>
+          <button type="submit" id="submitButton">Enviar</button>
         </div>
       </section>
     </main>

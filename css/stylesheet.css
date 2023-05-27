@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.header-container-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000000;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  color: white;
+}
+
+#landingPhrase {
+  margin-left: 0px;
+}
+
+
+.topItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  gap: 5px;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select select {
+  appearance: none;
+  width: 100%;
+  padding: 8px 25px 8px 8px; 
+  font-size: 16px;
+  border: none;
+  border-radius: 0;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+
+.custom-select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.bgY {
+  background-color: #f0a83e;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+  
+  .logo .img {
+    width: 30px;
+    margin-top: 50px;
+  }
+  
+  .logo span {
+    color: #fff;
+  }
+  
+  .logo h1 {
+    margin-top: 50px;
+  }
+  
+  .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-left: auto;
+  }
+  
+  .header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
